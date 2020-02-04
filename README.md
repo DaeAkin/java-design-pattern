@@ -5,7 +5,7 @@
 ## ☝️ 목차
 
 - 생성 디자인 패턴
-  - 싱글톤 패턴
+  - [싱글톤 패턴](https://github.com/DaeAkin/java-design-pattern/tree/master/src/main/java/com/donghyeon/designpattern/singleton)
   - 팩토리 패턴
   - 추상 팩토리 패턴 
   - 빌더 패턴 
