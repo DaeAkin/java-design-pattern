@@ -24,11 +24,9 @@ public abstract class Computer {
 }
 ```
 
-
-
 ### 팩토리 패턴 자식 클래스
 
-PC와 Server 자식 클래스가 있다고 가정해봅시다.
+PC와 Server **자식 클래스**가 있다고 가정해봅시다.
 
 ```java
 public class PC extends Computer {
@@ -60,7 +58,7 @@ public class PC extends Computer {
 }
 ```
 
-위 아래 클래스 모두 Computer 클래스를 상속했습니다.
+위 아래 클래스 모두 **Computer 클래스를 상속**했습니다.
 
 ```java
 public class Server extends Computer {
@@ -108,11 +106,40 @@ public class ComputerFactory {
 }
 ```
 
-팩토리 패턴의 중요한 포인트는 다음과 같습니다.
+팩토리 패턴의 중요한 **포인트**는 다음과 같습니다.
 
-- 팩토리 클래스를 싱글톤이나 static으로 자식클래스를 리턴하는 걸 가지고 있어야 합니다.
-- 입력 파라미터에 따라 각각의 다른 자식클래스들이 리턴됩니다. `getComputer` 메소드는 팩토리 메소드 입니다.
+- 팩토리 클래스를 싱글톤이나 static으로 자식클래스를 **리턴**하는 걸 가지고 있어야 합니다.
+- **입력 파라미터에 따라** 각각의 다른 자식클래스들이 리턴됩니다. `getComputer` 메소드는 팩토리 메소드 입니다.
 
-
+### 테스트
 
 다음은 팩토리 클래스를 테스트하는 코드 입니다.
+
+```java
+public class TestFactory {
+    public static void main(String[] args) {
+        Computer pc = ComputerFactory.getComputer("pc","2 GB","500 GB","2.4 GHz");
+        Computer server = ComputerFactory.getComputer("server","16 GB","1 TB","2.9 GHz");
+        System.out.println("Factory PC Config::"+pc);
+        System.out.println("Factory Server Config::"+server);
+    }
+}
+```
+
+**결과**
+
+```
+Factory PC Config::RAM= 2 GB, HDD=500 GB, CPU=2.4 GHz
+Factory Server Config::RAM= 16 GB, HDD=1 TB, CPU=2.9 GHz
+```
+
+### 팩토리 패턴의 장점 
+
+- 팩토리 패턴은 인터페이스에 대한 접근 방식을 제공합니다.
+- 팩토리 패턴은 실제 구현 클래스의 인스턴스를 제거하여 의존성을 제거하고 확장하기 쉽게 만듭니다. 예를 들어 PC 클래스 구현을 쉽게 변경할 수 있습니다.
+- 팩토리 패턴은 상속을 통해 클래스 간의 추상화를 제공합니다.
+
+### JDK에서 팩토리 패턴 사용 사례 
+
+- java.util.Canlendar , Resource , NumberFormat 클래스 들의 `getInstance()` 메소드들이 팩토리 패턴을 사용합니다.
+- Boolean 이나 Integer등 wrapper 클래스에 있는 `valueOf()` 메소드가 사용합니다.
