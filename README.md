@@ -9,7 +9,7 @@
   - [팩토리 패턴](https://github.com/DaeAkin/java-design-pattern/tree/master/src/main/java/com/donghyeon/designpattern/factory)
   - [추상 팩토리 패턴](https://github.com/DaeAkin/java-design-pattern/tree/master/src/main/java/com/donghyeon/designpattern/abstractfactory) 
   - [빌더 패턴](https://github.com/DaeAkin/java-design-pattern/tree/master/src/main/java/com/donghyeon/designpattern/builder) 
-  - 프로토타입 패턴
+  - [프로토타입 패턴](https://github.com/DaeAkin/java-design-pattern/tree/master/src/main/java/com/donghyeon/designpattern/prototypepattern)
 - 구조 디자인 패턴
   - 어댑터 패턴
   - 구성 패턴 
