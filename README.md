@@ -11,7 +11,7 @@
   - [빌더 패턴](https://github.com/DaeAkin/java-design-pattern/tree/master/src/main/java/com/donghyeon/designpattern/builder) 
   - [프로토타입 패턴](https://github.com/DaeAkin/java-design-pattern/tree/master/src/main/java/com/donghyeon/designpattern/prototypepattern)
 - 구조 디자인 패턴
-  - 어댑터 패턴
+  - [어댑터 패턴](https://github.com/DaeAkin/java-design-pattern/tree/master/src/main/java/com/donghyeon/designpattern/adapter)
   - 구성 패턴 
   - 프록시 패턴
   - Flyweight 패턴
