@@ -6,7 +6,7 @@ import java.util.List;
 
 public class Drawing implements Shape{
 
-    //collection of Shapes
+    //Shape의 컬렉션
     private List<Shape> shapes = new ArrayList<Shape>();
 
     @Override
@@ -17,17 +17,17 @@ public class Drawing implements Shape{
         }
     }
 
-    //adding shape to drawing
+    //색칠 할 도형 추가
     public void add(Shape s){
         this.shapes.add(s);
     }
 
-    //removing shape from drawing
+    //색칠 할 도형 삭제
     public void remove(Shape s){
         shapes.remove(s);
     }
 
-    //removing all the shapes
+    //색칠 할 도형 전부 삭제
     public void clear(){
         System.out.println("Clearing all the shapes from drawing");
         this.shapes.clear();
