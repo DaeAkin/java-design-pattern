@@ -6,8 +6,8 @@ import java.awt.Graphics;
 public class Line implements Shape {
 
     public Line(){
-        System.out.println("Creating Line object");
-        //adding time delay
+        System.out.println("선 만들기");
+        // 딜레이 2초
         try {
             Thread.sleep(2000);
         } catch (InterruptedException e) {

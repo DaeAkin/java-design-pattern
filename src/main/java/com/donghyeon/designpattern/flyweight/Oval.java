@@ -4,13 +4,13 @@ import java.awt.Graphics;
 
 public class Oval implements Shape {
 
-    //intrinsic property
+    //intrinsic 속성
     private boolean fill;
 
     public Oval(boolean f){
         this.fill=f;
-        System.out.println("Creating Oval object with fill="+f);
-        //adding time delay
+        System.out.println("타원 만들기 , 색="+f);
+        //딜레이 2초
         try {
             Thread.sleep(2000);
         } catch (InterruptedException e) {

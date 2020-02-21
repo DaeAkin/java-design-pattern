@@ -9,19 +9,19 @@ import java.awt.event.ActionListener;
 
 public class DrawingClient extends JFrame{
 
-    private static final long serialVersionUID = -1350200437285282550L;
+
     private final int WIDTH;
     private final int HEIGHT;
 
-    private static final ShapeType shapes[] = { ShapeType.LINE, ShapeType.OVAL_FILL,ShapeType.OVAL_NOFILL };
-    private static final Color colors[] = { Color.RED, Color.GREEN, Color.YELLOW };
+    private static final ShapeType[] shapes = { ShapeType.LINE, ShapeType.OVAL_FILL,ShapeType.OVAL_NOFILL };
+    private static final Color[] colors = { Color.RED, Color.GREEN, Color.YELLOW };
 
     public DrawingClient(int width, int height){
         this.WIDTH=width;
         this.HEIGHT=height;
         Container contentPane = getContentPane();
 
-        JButton startButton = new JButton("Draw");
+        JButton startButton = new JButton("그리기");
         final JPanel panel = new JPanel();
 
         contentPane.add(panel, BorderLayout.CENTER);
