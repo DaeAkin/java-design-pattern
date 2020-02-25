@@ -8,7 +8,7 @@ public class Triangle extends Shape {
 
     @Override
     public void applyColor() {
-        System.out.println("삼각형이 색칠 됨.");
+        System.out.print("삼각형이 색칠 됨.");
         color.applyColor();
     }
 }

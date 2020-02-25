@@ -16,7 +16,7 @@
   - [프록시 패턴](https://github.com/DaeAkin/java-design-pattern/tree/master/src/main/java/com/donghyeon/designpattern/proxy)
   - [Flyweight 패턴](https://github.com/DaeAkin/java-design-pattern/tree/master/src/main/java/com/donghyeon/designpattern/flyweight)
   - [Facade 패턴](https://github.com/DaeAkin/java-design-pattern/tree/master/src/main/java/com/donghyeon/designpattern/facade)
-  - 브릿지 패턴
+  - [브릿지 패턴](https://github.com/DaeAkin/java-design-pattern/tree/master/src/main/java/com/donghyeon/designpattern/bridge)
   - 데코레이터 패턴
 - 동작 디자인 패턴
   - 템플레이트 메소드 패턴

@@ -8,7 +8,7 @@ public class Pentagon extends Shape {
 
     @Override
     public void applyColor() {
-        System.out.println("오각형이 색칠 됨.");
+        System.out.print("오각형이 색칠 됨.");
         color.applyColor();
     }
 }
