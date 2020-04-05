@@ -19,7 +19,7 @@
   - [브릿지 패턴](https://github.com/DaeAkin/java-design-pattern/tree/master/src/main/java/com/donghyeon/designpattern/bridge)
   - [데코레이터 패턴](https://github.com/DaeAkin/java-design-pattern/tree/master/src/main/java/com/donghyeon/designpattern/decorator)
 - 동작 디자인 패턴
-  - 템플레이트 메소드 패턴
+  - [템플릿 메소드 패턴](https://github.com/DaeAkin/java-design-pattern/tree/master/src/main/java/com/donghyeon/designpattern/templatemethod)
   - Mediator 패턴
   - Chain of Responsibility Pattern
   - Observer Pattern

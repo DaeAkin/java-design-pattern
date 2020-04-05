@@ -3,7 +3,7 @@ package com.donghyeon.designpattern.templatemethod;
 public abstract class HouseTemplate {
 
     //템플릿 메소드, 오버라이드 하면 안됨.!
-    public final void buildHouse(){
+    public final void buildHouse() {
         buildFoundation();
         buildPillars();
         buildWalls();
@@ -17,6 +17,7 @@ public abstract class HouseTemplate {
 
     // 자식클래스가 구현해야함
     public abstract void buildWalls();
+
     public abstract void buildPillars();
 
     private void buildFoundation() {
