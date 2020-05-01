@@ -20,6 +20,40 @@ State 패턴의 **Context** 는 State 의 구현 객체를 하나 참조하고 �
 
 먼저 State 인터페이스를 만들어 메소드를 선언하고, State 구현 클래스와 Context 클래스를 만들어 보겠습니다.
 
+**State.java**
+
+코드~
+
+### State 구현체 만들기
+
+이번 예제에서는 두개의 State 클래스를 만들어 보겠습니다. TV를 **켜는** 클래스와 TV를 **끄는** 클래스 입니다.
+
+**TVStartState.java**
+
+~코드
+
+**TVStopState.java**
+
+~코드
+
+이제 state에 따라 동작을 하는 Context를 구현하면 됩니다.
+
+### State에 사용할 Context클래스 구현하기
+
+**TVContext.java**
+
+코드~
+
+Notice that Context also implements State and keep a reference of its current state and forwards the request to the state implementation.
+
+TVContext 클래스는 State인터페이스를 구현하며 보면 내부에 State 객체를 갖고 있어 
 
 
-1
+
+## 테스트
+
+
+
+**TVRemote.java**
+
+~코드
