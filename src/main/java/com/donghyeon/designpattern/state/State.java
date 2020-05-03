@@ -1,6 +1,5 @@
 package com.donghyeon.designpattern.state;
 
 public interface State {
-
-    void doAction();
+    void doAction(TVContext state);
 }

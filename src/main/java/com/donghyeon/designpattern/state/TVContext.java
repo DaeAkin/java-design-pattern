@@ -1,6 +1,6 @@
 package com.donghyeon.designpattern.state;
 
-public class TVContext implements State {
+public class TVContext {
 
     private State tvState;
 
@@ -8,12 +8,7 @@ public class TVContext implements State {
         this.tvState = tvState;
     }
 
-    public State getTvState() {
-        return tvState;
-    }
-
-    @Override
-    public void doAction() {
-
+    public void doNext(TVContext state) {
+        this.tvState.doAction(state);
     }
 }
