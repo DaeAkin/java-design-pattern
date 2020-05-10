@@ -10,13 +10,15 @@ public class ShoppingCartVisitorImpl implements ShoppingCartVisitor {
         } else{
             cost = book.getPrice();
         }
-        System.out.println("Book ISBN :: " + book.getIsbnNumber() + " cost = " + cost);
+        System.out.println("책 번호 :: " + book.getIsbnNumber() + " 가격 = " + cost);
 
-        return 0;
+        return cost;
     }
 
     @Override
     public int visit(Fruit fruit) {
-        return 0;
+        int cost = fruit.getPricePerKg()*fruit.getWeight();
+        System.out.println(fruit.getName() + " 가격 = "+cost);
+        return cost;
     }
 }
