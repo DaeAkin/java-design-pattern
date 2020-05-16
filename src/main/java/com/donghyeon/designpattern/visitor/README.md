@@ -12,14 +12,83 @@ Visitor 패턴을 구현하기 위해선, 먼저 장바구니에 쓰여질 아�
 
 **ItemElement.java**
 
-
-
-코드~
+```java
+public interface ItemElement {
+    int accept(ShoppingCartVisitor visitor);
+}
+```
 
 accept 함수는 Visitor 클래스를 인자로 받습니다. 
 
-ㅁ
+
+
+**Book.java**
+
+```java
+public class Book implements ItemElement{
+
+    private int price;
+    private String isbnNumber;
+
+    public Book(int price, String isbnNumber) {
+        this.price = price;
+        this.isbnNumber = isbnNumber;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public String getIsbnNumber() {
+        return isbnNumber;
+    }
+
+    @Override
+    public int accept(ShoppingCartVisitor visitor) {
+        return visitor.visit(this);
+    }
+}
+```
 
 
 
-1
+**Fruit.java**
+
+```java
+public class Fruit implements ItemElement{
+
+    private int pricePerKg;
+    private int weight;
+    private String name;
+
+    public Fruit(int pricePerKg, int weight, String name) {
+        this.pricePerKg = pricePerKg;
+        this.weight = weight;
+        this.name = name;
+    }
+
+    public int getPricePerKg() {
+        return pricePerKg;
+    }
+
+    public int getWeight() {
+        return weight;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    @Override
+    public int accept(ShoppingCartVisitor visitor) {
+        return visitor.visit(this);
+    }
+}
+```
+
+두 개의 클래스 모두 ItemElement 인터페이스를 구현해야 하기 때문에 accept() 메소드를 구현했습니다.
+
+이제 각각의 다른 아이템 타입이 있으므로 Visitor 인터페이스를 구현해 보겠습니다. 
+
+**ShoppingCartVisitor.java**
+
