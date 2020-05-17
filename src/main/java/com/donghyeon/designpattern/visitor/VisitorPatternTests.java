@@ -1,8 +1,6 @@
 package com.donghyeon.designpattern.visitor;
 
 public class VisitorPatternTests {
-
-
     public static void main(String[] args) {
         ItemElement[] items = new ItemElement[]{new Book(20, "1234"),new Book(100, "5678"),
                 new Fruit(10, 2, "바나나"), new Fruit(5, 5, "사과")};

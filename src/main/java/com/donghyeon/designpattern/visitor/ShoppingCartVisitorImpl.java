@@ -1,6 +1,7 @@
 package com.donghyeon.designpattern.visitor;
 
 public class ShoppingCartVisitorImpl implements ShoppingCartVisitor {
+    //책 계산기
     @Override
     public int visit(Book book) {
         int cost=0;
@@ -15,6 +16,7 @@ public class ShoppingCartVisitorImpl implements ShoppingCartVisitor {
         return cost;
     }
 
+    //과일 계산기
     @Override
     public int visit(Fruit fruit) {
         int cost = fruit.getPricePerKg()*fruit.getWeight();
