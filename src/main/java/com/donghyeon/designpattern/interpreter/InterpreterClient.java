@@ -10,9 +10,9 @@ public class InterpreterClient {
 
     public String interpret(String str) {
         Expression exp = null;
-        if(str.contains("Hexadecimal")) {
+        if(str.contains("16진수")) {
             exp = new IntToHexExpression(Integer.parseInt(str.substring(0,str.indexOf(" "))));
-        } else if(str.contains("Binary")) {
+        } else if(str.contains("2진수")) {
             exp = new IntToBinaryExpression(Integer.parseInt(str.substring(0,str.indexOf(" "))));
         } else return str;
 
@@ -20,8 +20,8 @@ public class InterpreterClient {
     }
 
      public static void main(String[] args) {
-         String str1 = "28 in Binary";
-         String str2 = "28 in Hexadecimal";
+         String str1 = "28 의 2진수 ";
+         String str2 = "28 의 16진수 ";
 
          InterpreterClient ec = new InterpreterClient(new InterpreterContext());
          System.out.println(str1+"= "+ec.interpret(str1));
