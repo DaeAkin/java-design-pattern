@@ -19,3 +19,4 @@ Iterator 패턴은 collection을 순회하는 실제 구현체를 숨기기 때�
 ## Interator 패턴 구현
 
 The first part of implementation is to define the contract for our collection and iterator interfaces.
+
