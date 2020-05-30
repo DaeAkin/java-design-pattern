@@ -50,9 +50,9 @@ public class ChannelCollectionImpl implements ChannelCollection {
 
         @Override
         public Channel next() {
-            Channel c = channels.get(position);
+            Channel channel = channels.get(position);
             position++;
-            return c;
+            return channel;
         }
 
     }

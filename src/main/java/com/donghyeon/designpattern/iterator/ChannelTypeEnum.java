@@ -1,5 +1,5 @@
 package com.donghyeon.designpattern.iterator;
 
 public enum ChannelTypeEnum {
-    ENGLISH, HINDI, FRENCH, ALL;
+    ENGLISH, HINDI, FRENCH, KOREAN, ALL;
 }

@@ -1,11 +1,7 @@
 package com.donghyeon.designpattern.iterator;
 
 public interface ChannelCollection {
-
-    public void addChannel(Channel c);
-
-    public void removeChannel(Channel c);
-
-    public ChannelIterator iterator(ChannelTypeEnum type);
-
+     void addChannel(Channel channel);
+     void removeChannel(Channel channel);
+     ChannelIterator iterator(ChannelTypeEnum type);
 }
