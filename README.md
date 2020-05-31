@@ -26,16 +26,8 @@
   - [Strategy Pattern](https://github.com/DaeAkin/java-design-pattern/tree/master/src/main/java/com/donghyeon/designpattern/strategy)
   - [Command Pattern](https://github.com/DaeAkin/java-design-pattern/tree/master/src/main/java/com/donghyeon/designpattern/command) 
   - [Visitor Pattern](https://github.com/DaeAkin/java-design-pattern/tree/master/src/main/java/com/donghyeon/designpattern/visitor)
-  - Interpreter Pattern
-  - Iterator Pattern
-  - Memento Pattern
-- Miscellaneous 디자인 패턴 
-  - DAO 디자인 패턴
-  - DI 패턴
-  - MVC 패턴
-
-## 참고자료
-
-https://www.journaldev.com/1827/java-design-patterns-example-tutorial
-
-https://sourcemaking.com/design_patterns
+  - [Interpreter Pattern](https://github.com/DaeAkin/java-design-pattern/tree/master/src/main/java/com/donghyeon/designpattern/interpreter)
+  - [Iterator Pattern](https://github.com/DaeAkin/java-design-pattern/tree/master/src/main/java/com/donghyeon/designpattern/iterator)
+  - [Memento Pattern](https://github.com/DaeAkin/java-design-pattern/tree/master/src/main/java/com/donghyeon/designpattern/memento)
+  
+  
